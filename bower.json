@@ -1,0 +1,16 @@
+{
+  "name": "projectX",
+  "description": "The best shop",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "aPospelov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.2"
+  }
+}
