@@ -6,34 +6,29 @@ body{
 }
 /*header*/
 .container {
-    width: 900px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.header {
+    background-color: #36343F;
+}
 .header h2{
+    color:#fff;
     font-size: 32pt;
-    color: #000;
 }
 .header span {
     color: #E42027;
 }
 /*menu*/
-.nav-pills a{
-    border-radius: none;
-    color:#000000;
-    text-align: center;
+.header .nav-pills li a {
+    color: #fff;
 }
-.nav-pills a:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    color:#E42027;
-}
-.logo:hover{
-    width: 150px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(30deg);
+.nav-pills li.active a,
+.nav-pills li a:hover,
+.section .btn:hover {
+    background-color:rgba(216,25,47,1);
+    box-shadow:0 2px 4px rgba(0,0,0,.5);
+    color:#fff;
 }
 
 /*main*/
@@ -52,5 +47,8 @@ body{
     text-decoration: none;
     color:#000;
     top: 2px;
+}
+.footer {
+    background-color: #EEEEEE;
 }
 
