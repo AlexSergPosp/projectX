@@ -1,7 +1,7 @@
-app.factory('photos', ['$http', function($http) {tos.json'
-    return $http.get('http://s3.amazonaws.com/codecademy-content/courses/ltp4/photos-api/pho)
-        .success(function(data) {
-            return data;
+pictures.factory('photos', ['$http', function($http) {
+    return $http.get('http://s3.amazonaws.com/codecademy-content/courses/ltp4/photos-api/photos.json')
+       .success(function(data) {
+            return data[0];
         })
         .error(function(data) {
             return data;

@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Supreme Shop Quick</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'>
     <script src="../bower_components/angular/angular.js"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
 </head>
-<body ng-app="GalleryApp">
+<body>
 <section class="header">
     <div class="container">
         <div class="row">
@@ -21,7 +22,7 @@
             </div>
             <div class="col-md-4 pull-right">
                 <ul class="nav nav-pills">
-                <li class="active"><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Sign Up</a></li>
                 <li><a href="#">Log In</a></li>
             </div>
@@ -34,35 +35,26 @@
     <div class="container">
         <div class="row">
             <ul class="nav nav-pills col-md-offset-2">
-                <li role="presentation"><a href="#">Home</a></li>
+                <li role="presentation"><a href="http://localhost:63342/projectX/app/index.html#/">Home</a></li>
                 <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Add Category</a></li>
                 <li role="presentation"><a href="#">Messages</a></li>
                 <li role="presentation"><a href="#">Messages</a></li>
                 <li role="presentation"><a href="#">Messages</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation"><a href="#" id="switch">Подствека</a></li>
             </ul>
         </div>
     </div>
 </section>
-<section class="main">
-    <div class="container">
-        <div >
-            <ul class="col-md-1">
-                <li><a class="side-btn pull-left" href="#">One</a></li>
-                <li><a class="side-btn pull-left" href="#">One</a></li>
-                <li><a class="side-btn pull-left" href="#">One</a></li>
-                <li><a class="side-btn pull-left" href="#">One</a></li>
-                <li><a class="side-btn pull-left" href="#">One</a></li>
-                <li><a class="side-btn pull-left" href="#">One</a></li>
-            </ul>
-            <div class="col-md-11">
-                    <div ng-view></div>
-            </div>
+<section class="angular-app" ng-app="MainScreenTemplate">
+    <div ng-view></div>
+</section>
 
-        </div>
-    </div>
-</section>
+
+
+
+
+
 
 <section class="footer">
     <div class="container">
@@ -71,7 +63,7 @@
                 <p>&copy;Pospelov</p>
             </div>
             <div class="col-md-2">
-                <a href="#"><img width="35px" height="35px" src="../contents/img/logo/vk.png"></a>
+                <a href="https://vk.com/audios31649512"><img width="35px" height="35px" src="../contents/img/logo/vk.png"></a>
             </div>
             <div class="col-md-2">
                 <a href="#"><img width="35px" height="35px" src="../contents/img/logo/tw.png"></a>
@@ -101,7 +93,8 @@
 <!-- Services -->
 <script src="js/services/photos.js"></script>
 
-
+<!-- Effects -->
+<script src="js/jquery/swithOn.js"></script>
 
 
 </body>
