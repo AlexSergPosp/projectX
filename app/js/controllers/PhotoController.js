@@ -2,4 +2,4 @@ main.controller('PhotoController', ['$scope', 'photos', '$routeParams', function
     photos.success(function(data) {
         $scope.detail = data[$routeParams.id];
     });
-}]);
+}]);    

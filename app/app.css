@@ -58,13 +58,19 @@ body{
 
 /*effects*/
 .switchOnOf {
-    background-color: #000; /* Чёрный фон */
+    background-color: #000;
     height: 100%; /* Высота максимальна */
     left: 0; /* Нулевой отступ слева */
-    opacity: 0.50; /* Степень прозрачности */
+    opacity: 0.20; /* Степень прозрачности */
     position: fixed; /* Фиксированное положение */
     top: 0; /* Нулевой отступ сверху */
     width: 100%; /* Ширина максимальна */
     z-index: 100; /* Заведомо быть НАД другими элементами */
 }
 
+.addCategory .container{
+    height:400px;
+}
+.addCategory .input-group {
+    top:100px;
+}
