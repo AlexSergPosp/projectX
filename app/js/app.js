@@ -1,9 +1,13 @@
 var main = angular.module('MainScreenTemplate', ['ngRoute']);
 main.config(function($routeProvider) {
     $routeProvider
-        .when("/", {
-            /*controller: "MainController",*/
-            templateUrl: "views/angular/mainScreen.html"
+        .when("/home/", {
+            controller: "CategoryController",
+            templateUrl: "views/angular/home.html"
+        })
+        .when("/createCategory", {
+            //controller: "CategoryController",
+            templateUrl: "views/angular/createCategory.html"
         })
         .when("/photos/", {
             controller: "HomeController",
@@ -17,3 +21,5 @@ main.config(function($routeProvider) {
             redirectTo: "/"
         });
 });
+
+var URL_GET_ALL_CATEGORIES = "http://localhost:63342/projectX/app/json/category.json";

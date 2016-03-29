@@ -3,11 +3,11 @@ var url = require('url');
 var querystring = require('querystring');
 var static = require('node-static');
 var file = new static.Server('.');
-var fs = require('fs');
 
 function accept(req, res) {
-fs.
-    if (req.url == '/digits') {
+    console.log("huyase");
+
+    if (req.url == "/digits") {
 
         res.writeHead(200, {
             'Content-Type': 'text/plain',
@@ -31,6 +31,8 @@ fs.
         file.serve(req, res);
     }
 }
+
+
 
 // ----- запуск accept как сервера из консоли или как модуля ------
 
