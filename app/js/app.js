@@ -17,6 +17,10 @@ main.config(function($routeProvider) {
             controller: "PhotoController",
             templateUrl: "views/angular/photo.html"
         })
+        .when("/aboutUs", {
+            controller: "AboutUsController",
+            templateUrl: "views/angular/aboutUs.html"
+        })
         .otherwise({
             redirectTo: "/"
         });

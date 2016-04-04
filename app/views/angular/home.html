@@ -1,7 +1,12 @@
 <div class="creteCategory">
     <div class="container">
-        <ul class="ulCategory" ng-repeat="category in categories">
-            <li><p>{{category.Name}}</p></li>
-        </ul>
+        <div class="col-md-2" id="left-side">
+            <ul class="nav nav-pills nav-stacked" ng-repeat="category in categories">
+                <li><a href="#">{{category.Name}}</a></li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+
+        </div>
     </div>
 </div>
